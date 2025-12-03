@@ -147,8 +147,15 @@ class Cpu:
         self._decoded = Instruction(raw=self._ir)
 
     def _fetch(self):
-        pass  # complete implementation here
+        # Fetch from program counter
+        instr = self._i_mem.read(self._pc)
 
+        # Load into instruction register
+        self._ir = instr
+
+        # Increment PC need to keep PC 16 bit
+        self._pc = (self._pc + 1) & 0xFFFF
+        
     def load_program(self, prog):
         self._i_mem.load_program(prog)
 
