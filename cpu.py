@@ -73,7 +73,7 @@ class Cpu:
             # execute...
             match self._decoded.mnem:
                 case "LOADI":
-                    pass  # complete implementation here
+                    pass  # complete implementation here Tristan
                 case "LUI":
                     # TODO Refactor for future semester(s) if any.
                     # Cheating for compatibility with released ALU tests
@@ -86,15 +86,15 @@ class Cpu:
                     data = upper | lower
                     self._regs.execute(rd=rd, data=data, write_enable=True)
                 case "LOAD":
-                    pass  # complete implementation here
+                    pass  # complete implementation here Tristan
                 case "STORE":
-                    pass  # complete implementation here
+                    pass  # complete implementation here Tristan
                 case "ADDI":
-                    pass  # complete implementation here
+                    pass  # complete implementation here Colm
                 case "ADD":
-                    pass  # complete implementation here
+                    pass  # complete implementation here Colm
                 case "SUB":
-                    pass  # complete implementation here
+                    pass  # complete implementation here Colm
                 case "AND":
                     pass  # complete implementation here
                 case "OR":
